@@ -1,0 +1,137 @@
+/* monster generator */
+
+#mgen-container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 25px;
+	/* border: 3px solid #7a7a00; */
+	margin: 0 20px 25px;
+}
+
+#mgen-traits {
+	border-collapse: collapse;
+	width: 100%;
+}
+#mgen-traits .dark {
+	background-color: #cccc00;
+}
+
+#mgen-traits tr td { padding: 6px 6px; }
+#mgen-traits tr td:first-of-type {
+	text-align: right;
+	width: 20%;
+}
+
+#mgen-buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mgen-b-main {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#mgen-b-main input {
+	flex: 0 0 24%;
+	margin: 10px 0;
+	padding: 1% 0;
+}
+
+#mgen-b-gen-options { width: 40%; }
+
+#mgen-b-gen-options fieldset {
+	border: 2px solid #7a7a00;
+}
+
+#mgen-b-gen-options div {
+	display: flex;
+	flex-direction: column;
+}
+
+#mgen-b-regen-options {
+	width: 60%;
+}
+
+#mgen-b-regen-options fieldset {
+	border: 2px solid #7a7a00;
+	height: 55%;
+}
+#mgen-b-regen-options div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+#mgen-b-regen-options label {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+	#mgen-b-regen-options div {
+		flex-wrap: nowrap;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	#mgen-container {
+		margin: 0 0 25px;
+	}
+
+	#mgen-buttons { flex-direction: column; }
+
+	#mgen-b-main input {
+		flex-basis: 49%;
+		margin: 4px 0;
+	}
+
+	#mgen-b-gen-options, #mgen-b-regen-options { width: auto; }
+}
+
+
+/* rotago simulator ☒ ☐ ◇ ◆ ► ◉ */
+
+#rsim-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	padding: 50px 0 150px 0;
+}
+
+#rsim-simulator {
+	/* background-color: white; */
+	width: 6in;
+	min-height: 235.3px;
+	border: 2px solid black;
+	margin-bottom: 20px;
+}
+
+#rsim-options {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#rsim-s-board {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rsim-s-b-tile {
+	background-color: white;
+	width: calc(6in/23.83);
+	height: calc(6in/23.83);
+	border: 1px solid rgb(67, 67, 67);
+}
+
+.rsim-s-b-imgtile {
+	width: 100%;
+	
+}

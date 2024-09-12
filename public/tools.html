@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>tools | debyte</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="content/icon.svg">
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div id="nav-container">
+				<div id="topnav">
+					<a id="landing-anchor" href="index.html"><img src="content/img/logo/db_logo_full.svg" alt="debyte logo full"></a>
+					<ul>
+						<li id="nav-toggle"><img  src="content/img/icon/hamburger_nav.png"></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="portfolio.html">portfolio</a></li>
+						<li><a href="tools.html" style="background-color: yellow; color: black">tools</a></li>
+						<li id="nav-contact"><a href="about.html#about-contact">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="page-content">
+			<div id="main-container">
+				<h1>tools >>></h1>
+				<div class="tool-descriptor" id="monster-generator">
+					<div class="tool-nametag"><h2>&#x2517; <a href="tools/mgen/monster-generator.html">&ensp;Monster Generator</h2></a></div>
+					<p>A monster generator that describes a randomly generated entity from a list of given characteristics. Based on <a href="https://www.witchboy.net/articles/rpg-materials/the-monster-generator/" target="_blank">The Monster Generator</a><sup class="tooltip">&boxbox;<span class="tooltip-text">[external site link!] (witchboy.net)</span></sup> by Harvey Smith.</p>
+					<div class="tool-updatelog">
+						<h3>Update Log</h3>
+						<div class="tool-u-entry" id="20240721">
+							<p class="tool-u-e-date"><small>21 JUN 2024</small></p>
+							<p>This is the first version of the monster generator ripped straight from Smith's site, with a couple of basic features for additional functionality.</p>
+							<p>Features include:</p>
+							<ul class="tool-u-e-featurelist">
+								<li>9 randomly generated traits:<p>body, skin, head, locomotion, appendages, attacks, defenses, intelligence & social order (IQSO), and a <i><small>weird</small></i> trait.</p></li>
+								<li>Generator log that stores the 16 most recent generations, with the ability to:<p><samp>undo</samp> a generation (permanent until a redo button is added)</p><p><samp>clear</samp> the history<span class="tooltip">?<span class="tooltip-text">exists but kind of purposeless at the moment?</span></span></p></li>
+								<li>2 option panels (collapsible via <samp>▽/△</samp>):<p>Generator option to <samp>includeWeird [t/f]</samp> - Generates a weird trait</p><p>Regenerator toggles for all 9 traits</p></li>
+							</ul>
+							<p>Future plans for this tool include a redo button, button styles (cause they're kinda ugly), and a way to actually <i>view</i> the history.</p>
+						</div>
+					</div>
+				</div>
+				<div class="tool-descriptor" id="rotago-simulator">
+					<div class="tool-nametag"><h2>&#x2517; <a href="tools/rotagosim/rsimulator.html">&ensp;ROTAGO Simulator</h2></a></div>
+					<p>ROTAGO is a board game I worked on for a group project in my Game Design 1 class over the course of 3 weeks.</p>
+					<p>For this project, our goal was to draft a sequential, perfect information, analog game (Chess, Checkers, Go, Reversi, Connect 4, etc.) to be playtested by other groups in our class in order to make revisions for a final game. Click on the name above to watch a simulation or <i>even play the game yourself</i>!</p>
+					<div class="tool-updatelog">
+						<h3>Update Log</h3>
+						<div class="tool-u-entry" id="20240721">
+							<p class="tool-u-e-date"><small>SEP 2024</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<p>© 2024. created by derek king - all rights reserved</p>
+				<p id="host">hosted with firebase 🔥</p>
+			</div>
+		</footer>
+	</body>
+</html>

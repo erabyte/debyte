@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>monster generator | debyte</title>
+		<link rel="stylesheet" href="../../style.css">
+		<link rel="stylesheet" href="../tools.css">
+		<link rel="icon" href="../../content/icon.svg">
+		<script src="../../main.js" defer></script>
+		<script src="monstergen.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div id="nav-container">
+				<div id="topnav">
+					<a id="landing-anchor" href="../../index.html"><img src="../../content/img/logo/db_logo_full.svg" alt="debyte logo full"></a>
+					<ul>
+						<li id="nav-toggle"><img  src="content/img/icon/hamburger_nav.png"></li>
+						<li><a href="../../about.html">about</a></li>
+						<li><a href="../../portfolio.html">portfolio</a></li>
+						<li><a href="../../tools.html">tools</a></li>
+						<li id="nav-contact"><a href="../../about.html#about-contact">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="page-content">
+			<div id="main-container">
+				<h3 id="tool-return"><a href="../../tools.html#monster-generator"><< return</a></h3>
+				<h1 id="tool-title">Monster Generator</h1>
+				<div id="mgen-container">
+					<div>
+						<table id="mgen-traits">
+							<tr class="dark"><td><b>Body:<b></td><td id="mgen-t-body"></td></tr>
+							<tr><td><b>Skin:</b></td><td id="mgen-t-skin"></td></tr>
+							<tr class="dark"><td><b>Head:</b></td><td id="mgen-t-head"></td></tr>
+							<tr><td><b>Locomotion:</b></td><td id="mgen-t-locomotion"></td></tr>
+							<tr class="dark"><td><b>Appendages:</b></td><td id="mgen-t-appendages"></td></tr>
+							<tr><td><b>Attacks:</b></td><td id="mgen-t-attacks"></td></tr>
+							<tr class="dark"><td><b>Defenses:</b></td><td id="mgen-t-defenses"></td></tr>
+							<tr><td><b>Intelligence/ Social Order:</b></td><td id="mgen-t-iqso"></td></tr>
+							<tr class="dark"><td><b>Weird:</b></td><td id="mgen-t-weird"></td></tr>
+						</table>
+					</div>
+					<div id="mgen-buttons">
+						<div id="mgen-b-main">
+							<input type="button" id="mgen-b-generate" value="generate">
+							<input type="button" id="mgen-b-regen" value="regen traits">
+							<input type="button" id="mgen-b-undo" value="undo / previous">
+							<input type="button" id="mgen-b-clear" value="clear history">
+						</div>
+						<div id="mgen-b-gen-options">
+							<fieldset>
+								<legend class="collapse">Generation &#x1f6e0;&ensp;&xdtri;&nbsp;</legend>
+								<div>
+									<label><input type="checkbox" id="mgen-b-g-includeWeird" checked>Include Weird Trait</label>
+									<label><input type="checkbox" id="mgen-b-g-useLimitations" disabled>Use Limitations<span class="tooltip">?
+											<span class="tooltip-text">generate a monster according to general realistic construction of the creature it's based on, i.e. a fish monster would not <i>usually</i> have fur or large flappy ears, etc. <i>[not implemented]</i></span>
+									</span></label>
+								</div>
+							</fieldset>
+						</div>
+						<div id="mgen-b-regen-options">
+							<fieldset>
+								<legend class="collapse">Regen &#x1f6e0;&ensp;&xdtri;&nbsp;</legend>
+								<div>
+									<label><input type="checkbox" id="mgen-b-r-body">Body</label>
+									<label><input type="checkbox" id="mgen-b-r-skin">Skin</label>
+									<label><input type="checkbox" id="mgen-b-r-head">Head</label>
+									<label><input type="checkbox" id="mgen-b-r-locomotion">Locomotion</label></span>
+									<label><input type="checkbox" id="mgen-b-r-appendages">Appendages</label>
+									<label><input type="checkbox" id="mgen-b-r-attacks">Attacks</label>
+									<label><input type="checkbox" id="mgen-b-r-defenses">Defenses</label>
+									<label><input type="checkbox" id="mgen-b-r-iqso">Intelligence/Social Order</label>
+									<label><input type="checkbox" id="mgen-b-r-weird">Weird</label>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<p>© 2024. created by derek king - all rights reserved</p>
+				<p id="host">hosted with firebase 🔥</p>
+			</div>
+		</footer>
+	</body>
+</html>

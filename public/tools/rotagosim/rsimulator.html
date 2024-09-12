@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>monster generator | debyte</title>
+		<link rel="stylesheet" href="../../style.css">
+		<link rel="stylesheet" href="../tools.css">
+		<link rel="icon" href="../../content/icon.svg">
+		<script src="../../main.js" defer></script>
+		<script src="rsim.js" defer type="module"></script>
+	</head>
+	<body>
+		<header>
+			<div id="nav-container">
+				<div id="topnav">
+					<a id="landing-anchor" href="../../index.html"><img src="../../content/img/logo/db_logo_full.svg" alt="debyte logo full"></a>
+					<ul>
+						<li id="nav-toggle"><img  src="../../content/img/icon/hamburger_nav.png"></li>
+						<li><a href="../../about.html">about</a></li>
+						<li><a href="../../portfolio.html">portfolio</a></li>
+						<li><a href="../../tools.html">tools</a></li>
+						<li id="nav-contact"><a href="../../about.html#about-contact">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="page-content">
+			<div id="main-container">
+				<h3 id="tool-return"><a href="../../tools.html#rotago-simulator"><< return</a></h3>
+				<h1 id="tool-title">ROTAGO Simulator</h1>
+				<div id="rsim-container">
+					<div id="rsim-simulator">
+						
+					</div>
+					<fieldset id="rsim-options">
+						<input id="rsim-o-start" type="button" value="start simulation"></input>
+						<input id="rsim-o-end" type="button" value="end simulation"></input>
+						<input id="rsim-o-play" type="button" value="play"></input>
+						<input id="rsim-o-pause" type="button" value="pause"></input>
+						<input id="rsim-o-next" type="button" value="next turn"></input>
+						<input id="rsim-o-replay" type="button" value="replay"></input>
+						<input id="rsim-o-undo" type="button" value="prev turn"></input>
+						<label id="rsim-o-simspeed">simulation speed<input type="range" value="50"></input></label>
+						<input id="rsim-o-export" type="button" value="export data"></input>
+						<input id="rsim-o-grayscale" type="button" value="grayscale mode"></input>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<p>© 2024. created by derek king - all rights reserved</p>
+				<p id="host">hosted with firebase 🔥</p>
+			</div>
+		</footer>
+	</body>
+</html>

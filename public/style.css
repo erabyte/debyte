@@ -1,0 +1,299 @@
+/* font declarations */
+@font-face {
+	font-family: "Creato Display";
+	src: url("./content/font/creato_display/CreatoDisplay-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Creato Display";
+	src: url("./content/font/creato_display/CreatoDisplay-Bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Creato Display Extra Bold";
+	src: url("./content/font/creato_display/CreatoDisplay-ExtraBold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Creato Display Extra Bold";
+	src: url("./content/font/creato_display/CreatoDisplay-Black.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* global styles */
+body {
+	background-color: yellow;
+	margin: 0;
+	font-family: "Creato Display";
+	display: flex;
+	flex-direction: column;
+}
+
+#page-content {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#main-container {
+	width: 60%;
+	background-color:yellow;
+	padding: 0 5%;
+	/* box-shadow: 0px 0px 50px 35px #7a7a00; */
+}
+
+#main-container p {
+	position: relative;
+	left: 4%;
+	width: 96%;
+}
+#main-container a { color: #1d59c7; }
+#main-container a:visited { color: #5a6b83; }
+#main-container a:hover {text-decoration: underline;}
+
+a { text-decoration: none; }
+
+h2, h5 { margin: 35px 0 7px 0; }
+
+p { margin: 5px 0 10px 0; }
+
+label:has(input:disabled) {
+	color: #7a7a00;
+}
+
+/* global >> tooltips */
+
+.tooltip {
+	position: relative;
+	border-bottom: 2px dotted;
+	vertical-align: super;
+	font-size: 80%;
+	margin: 0 0 0 3px;
+}
+
+.tooltip-text {
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	background-color: #525200;
+	color: white;
+	padding: 3px;
+	border-radius: 3px;
+	top: -15px;
+	width: 0;
+	max-width: 400px;
+	text-align: center;
+	box-shadow: 0px 5px 10px 3px #292900;
+}
+
+/* global >> header styles */
+header {
+	height: 70px;
+	display: flex;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#nav-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #525200;
+	/* padding: 0 5%; */
+	/* box-shadow: 0px 0px 50px 35px #7a7a00; */
+}
+
+#topnav {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#topnav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#topnav ul li {
+	font-size: 120%;
+	background-color: #525200;
+	display: flex;
+}
+
+#topnav li a {
+	font-family: "Creato Display Extra Bold";
+	text-align: center;
+	color: white;
+	padding: 20px 20px;
+	width: 100%;
+}
+#topnav li a:hover {
+	color: yellow;
+	background-color: #3d3d00;
+	border-bottom: 3px yellow solid;
+}
+
+#topnav #nav-contact { background-color: #292900; }
+#topnav #nav-contact a { color: yellow; }
+#topnav #nav-contact a:hover {
+	color: white;
+	border-bottom: 3px white solid;
+}
+
+#nav-toggle {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+#nav-toggle img {
+	width: 40px;
+	padding: 15px;
+	display: none;
+}
+
+#landing-anchor { 
+	align-items: center;
+	display: flex;
+	align-items: center;
+}
+#landing-anchor img { height: 50px; }
+
+/* global >> footer styles */
+footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+footer div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	color: white;
+	background-color: #525200;
+	padding: 0 5%;
+	box-shadow: 0px 0px 50px 35px #7a7a00;
+}
+
+footer #host { color: yellow; }
+
+footer p { margin: 0; }
+
+/* screen adjustment styles */
+@media screen and (max-width: 770px) {
+	header { overflow: visible; }
+
+	#topnav ul {
+		flex-direction: column;
+		overflow: hidden;
+		width: 150px;
+	}
+
+	#topnav, #main-container, footer div {
+		width: 90%;
+		box-shadow: none;
+	}
+
+	#nav-toggle img {
+		display: block;
+	}
+
+	.tooltip {
+		vertical-align:bottom;
+		font-size: 100%;
+		margin: 0 0 0 7px;
+	}
+}
+
+/* about page content styles */
+#interest-table {
+	display: flex;
+	justify-content: space-around;
+}
+
+#interest-table table {
+	text-align: center;
+	width: 60%;
+	border-top: 2px dotted;
+	border-bottom: 2px dotted;
+	margin: 10px 0;
+}
+
+#interest-table td { padding: 4px 0}
+
+/* portfolio page content styles */
+
+/* tool page + universal tool content styles */
+.tool-nametag {
+	display: flex;
+	align-items: center;
+}
+
+.tool-nametag h2, h5 { margin: 0; }
+
+#tool-return { margin: 20px 0 0 0; }
+#tool-return a:visited { color: #1d59c7; }
+
+#tool-title { margin: 5px 0 20px 0; }
+
+.tool-updatelog {
+	width: 92%;
+	margin: 0 0 0 4%;
+}
+
+.tool-updatelog p {
+	margin: 0 0 5px;
+}
+
+.tool-u-entry {
+	margin: 0 0 30px;
+	padding: 15px 0 0;
+	border-top: 2px solid #525200
+}
+.tool-u-e-date { padding: 0 0 10px}
+.tool-u-e-date small {
+	font-weight: bold;
+	padding: 2px 6px;
+	background-color: #525200;
+	color: white;
+}
+
+.tool-u-e-featurelist {
+	margin: 10px 0 20px;
+	position: relative;
+	width: 90%;
+	left: 4%
+}
+.tool-u-e-featurelist li { margin: 0 0 15px;}
+
+.tool-u-e-featurelist li p {
+	display: list-item;
+	margin: 0;
+	padding-bottom: 2px;
+}
+.tool-u-e-featurelist li p:first-of-type { margin: 7px 0 0 0; }
+
+.tool-u-e-featurelist samp {
+	background-color: #cccc00;
+	padding: 2px;
+	border-radius: 3px;
+}
